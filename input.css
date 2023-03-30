@@ -15,4 +15,8 @@
 	.link {
 		@apply text-grayisViolet transition duration-300 hover:text-veryDarkViolet;
 	}
+
+	.btn {
+		@apply px-8 py-3 bg-cyan text-white font-bold transition duration-300 hover:opacity-70;
+	}
 }
