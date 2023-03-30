@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Simple Tailwind Starter</title>
-  </head>
-  <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
-  </body>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Shorly Tailwind Landing Page</title>
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<!-- Nav Section -->
+		<nav class="relative mx-auto p-6">
+			<div class="flex items-center justify-between">
+				<!-- Logo/Menu -->
+				<div class="flex space-x-20">
+					<!-- Logo -->
+					<a href="#">
+						<img src="images/logo.svg" alt="logo">
+					</a>
+					<!-- Menu -->
+					<div class="hidden lg:flex space-x-8">
+						<a href="#" class="link">Features</a>
+						<a href="#" class="link">Pricing</a>
+						<a href="#" class="link">Resources</a>
+					</div>
+				</div>
+
+				<!-- Button Menu -->
+				<div class="hidden lg:flex items-center text-grayisViolet font-bold space-x-6">
+					<a href="#" class="link">Login</a>
+					<a href="#" class="px-8 py-3 bg-cyan text-white font-bold rounded-full transition duration-300 hover:opacity-70">Sign Up</a>
+				</div>
+
+				<!-- @todo Hambager Menu -->
+			</div>
+
+			<!-- @todo Mobile Menu -->
+		</nav>
+	</body>
+
 </html>
