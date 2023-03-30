@@ -17,6 +17,10 @@
 	}
 
 	.btn {
-		@apply px-8 py-3 bg-cyan text-white font-bold transition duration-300 hover:opacity-70;
+		@apply px-8 py-3 bg-cyan text-white font-bold transition duration-300 hover:opacity-70 focus:outline-none;
+	}
+
+	.linkItem {
+		@apply flex flex-col md:flex-row items-center justify-between p-6 bg-white rounded-lg;
 	}
 }
