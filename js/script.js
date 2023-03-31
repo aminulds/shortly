@@ -1,6 +1,9 @@
 const linkForm = document.getElementById('linkForm')
 const linkInput = document.getElementById('linkInput')
 const errorMessage = document.getElementById('errorMessage')
+const menuButton = document.getElementById('menuButton')
+const closemenuButton = document.getElementById('closemenuButton')
+const mobileMenu = document.getElementById('mobileMenu')
 
 // URL Validator Fun
 const validURL = (str) => {
@@ -15,8 +18,6 @@ const validURL = (str) => {
     ); // fragment locator
     return !!pattern.test(str);
 }
-
-
 
 const formSubmit = (e) => {
     e.preventDefault()
@@ -34,4 +35,15 @@ const formSubmit = (e) => {
     }
 }
 
+// Mobiel Menu Toggle
+const menuToggle = () => {
+    mobileMenu.classList.toggle('block');
+    mobileMenu.classList.toggle('hidden');
+}
+
+
+
+// Fun Call
 linkForm.addEventListener('submit', formSubmit)
+menuButton.addEventListener('click', menuToggle)
+closemenuButton.addEventListener('click', menuToggle)

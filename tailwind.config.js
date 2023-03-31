@@ -10,6 +10,10 @@ module.exports = {
 				grayisViolet: 'hsl(257, 7%, 63%)',
 				veryDarkBlue: 'hsl(255, 11%, 22%)',
 				veryDarkViolet: 'hsl(260, 8%, 14%)',
+				facebook: '#0165E1',
+				twitter: '#1DA1F2',
+				pinterest: '#E60023',
+				instagram: '#E1306C',
 			},
 
 			fontFamily: {

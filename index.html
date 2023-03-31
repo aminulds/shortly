@@ -8,13 +8,16 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Shorly Tailwind Landing Page</title>
 
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+		<!-- Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css">
@@ -38,16 +41,40 @@
 					</div>
 				</div>
 
-				<!-- Button Menu -->
+				<!-- Action Menu -->
 				<div class="hidden lg:flex items-center text-grayisViolet font-bold space-x-6">
 					<a href="#" class="link">Login</a>
 					<a href="#" class="btn rounded-full">Sign Up</a>
 				</div>
 
-				<!-- @todo Hambager Menu -->
+				<!-- Hambager Menu -->
+				<button type="button" id="menuButton" class="lg:hidden focus:outline-none transition-all duration-200 relative focus-visible:outline-none text-cyan text-2xl">
+					<i class="fa-solid fa-bars-staggered"></i>
+				</button>
 			</div>
 
-			<!-- @todo Mobile Menu -->
+			<!-- Mobile Menu -->
+			<div id="mobileMenu" class="hidden lg:hidden fixed z-50 left-0 top-0 min-w-[300px] h-screen bg-cyan text-veryDarkViolet py-10 transition-all duration-500">
+				<div class="relative">
+					<!-- Menu Close Button -->
+					<button id="closemenuButton" class="absolute -top-3 right-6 w-8 h-8 bg-white text-red flex items-center justify-center rounded-md text-xl">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
+
+					<!-- Menu -->
+					<div class="absolute top-8 left-6 flex flex-col space-y-8">
+						<a href="#" class="font-bold text-white transition duration-150 hover:text-darkViolet">Features</a>
+						<a href="#" class="font-bold text-white transition duration-150 hover:text-darkViolet">Pricing</a>
+						<a href="#" class="font-bold text-white transition duration-150 hover:text-darkViolet">Resources</a>
+
+						<div class="flex items-center justify-between space-x-6">
+							<a href="#" class="btn bg-darkViolet text-white rounded-full">Login</a>
+							<a href="#" class="btn bg-white text-darkViolet rounded-full">Sign Up</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</nav>
 
 		<!-- Hero Section -->
@@ -188,6 +215,70 @@
 			</div>
 		</section>
 
+		<!-- Footer Section -->
+		<footer class="py-16 bg-veryDarkViolet">
+			<div class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+				<!-- Logo -->
+				<img src="images/logo.svg" alt="logo">
+
+				<!-- Menu -->
+				<div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+					<!-- Menu Item -->
+					<div class="flex flex-col items-center wifu
+					 md:items-start">
+						<h5 class="mb-5 font-bold text-white capitalize">Features</h5>
+
+						<div class="flex flex-col items-center space-y-3 md:items-start">
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Link Shortening</a>
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Branded Links</a>
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Analytics</a>
+						</div>
+					</div>
+
+					<!-- Menu Item -->
+					<div class="flex flex-col items-center wifu
+					 md:items-start">
+						<h5 class="mb-5 font-bold text-white capitalize">Resources</h5>
+
+						<div class="flex flex-col items-center space-y-3 md:items-start">
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Blog</a>
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Developer</a>
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Support</a>
+						</div>
+					</div>
+
+					<!-- Menu Item -->
+					<div class="flex flex-col items-center wifu
+					 md:items-start">
+						<h5 class="mb-5 font-bold text-white capitalize">Company</h5>
+
+						<div class="flex flex-col items-center space-y-3 md:items-start">
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">About</a>
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Our Team</a>
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Careers</a>
+							<a class="text-grayisViolet transition duration-150 hover:text-cyan" href="#">Contact</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Social Link -->
+				<div class="flex space-x-6">
+					<a href="#" class="text-facebook socialLink">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+					<a href="#" class="text-instagram socialLink">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a href="#" class="text-twitter socialLink">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+					<a href="#" class="text-pinterest socialLink">
+						<i class="fa-brands fa-pinterest"></i>
+					</a>
+				</div>
+
+			</div>
+		</footer>
 
 		<!-- Main JS -->
 		<script src="js/script.js"></script>
