@@ -801,6 +801,18 @@ h2 {
   background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
 }
 
+.bg-cta-mobile {
+  background-image: url("../images/bg-boost-mobile.svg");
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -815,6 +827,10 @@ h2 {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-24 {
@@ -901,6 +917,11 @@ h2 {
   color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .placeholder-yellow-500::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(234 179 8 / var(--tw-placeholder-opacity));
@@ -983,6 +1004,10 @@ h2 {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.75rem * var(--tw-space-x-reverse));
     margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:bg-cta-desktop {
+    background-image: url("../images/bg-boost-desktop.svg");
   }
 
   .md\:text-left {
